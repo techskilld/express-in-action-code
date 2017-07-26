@@ -1,0 +1,8 @@
+{ "name" : "Mustache",
+  "author" : "mwamodojnr",
+  "private" : true,
+  "version" : "0.0.1", 
+  "dependencies": {
+    "mustache": "^2.3.0"
+  }
+}
