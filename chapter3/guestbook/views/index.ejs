@@ -1,21 +1,29 @@
 <% include header %>
 
-<% if (entries.length) { %>
-  <% entries.forEach(function(entry) { %>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <div class="text-muted pull-right">
-          <%= entry.published %>
+  <% if (entries.length) { %>
+    <% entries.forEach(function(entry) { %>
+      
+      <div class="container">
+        <div class="card" style="width: 20rem; padding-top: 30px; margin-top: 30px;">
+          <div class="card-block">
+            <h4 class="card-title"> <%= entry.title %> </h4>
+            <p class="card-text">
+              <%= entry.body %>
+            </p>
+          </div>
         </div>
-        <%= entry.title %>
       </div>
-      <div class="panel-body">
-        <%= entry.body %>
+
+    <% }) %>
+  <% } else { %>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Mwamodojnr's Guestbook</h1>
+        <p class="lead"> Guestbook has no entries. <a href="/new-entry">Add one</a>!</p>
       </div>
     </div>
-  <% }) %>
-<% } else { %>
-  No entries! <a href="/new-entry">Add one!</a>
-<% } %>
+
+  <% } %>
 
 <% include footer %>

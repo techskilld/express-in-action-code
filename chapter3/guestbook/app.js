@@ -19,7 +19,11 @@ app.get('/', function(req, res){
 });
 
 app.get('/new-entry', function(req, res){
-  res.render('new-entry')
+  res.render('new-entry');
+});
+
+app.get('/about', function(req, res){
+  res.render('about');
 });
 
 app.post('/new-entry', function(req, res){
