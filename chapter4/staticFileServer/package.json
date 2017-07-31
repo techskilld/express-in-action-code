@@ -1,0 +1,16 @@
+{
+  "name": "static-file-fun",
+  "version": "1.0.0",
+  "description": "Serve Static File For Fun. Like A Boss.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "mwamodojnr",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "morgan": "^1.8.2"
+  }
+}
