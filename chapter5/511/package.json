@@ -1,0 +1,15 @@
+{
+  "name": "511",
+  "version": "1.0.0",
+  "description": "routing like a boss",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon app.js"
+  },
+  "author": "mwamodojnr",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
